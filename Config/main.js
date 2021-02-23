@@ -17,6 +17,9 @@ exports.Info = {
     "Owner": "n4n0"
 }
 
+/*
+*@type: [<string>]
+*/
 exports.GetMsg = function(msg) {
     if(msg.includes(" ")) {
         let g = msg.split(" ");
