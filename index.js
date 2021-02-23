@@ -17,7 +17,7 @@ const eCrud = require("./Auth/functions.js");
 const Extra = require("./Extra/functions.js");
 
 // Extra Const/Vars Etc
-// process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const Client = new Discord.Client();
 
 
