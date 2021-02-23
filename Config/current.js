@@ -5,6 +5,7 @@
 exports.CurrentCmd = {
     "Cmd": "",
     "arg": [],
+    "argCount": "",
     "fullcmd": ""
 };
 
