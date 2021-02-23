@@ -21,3 +21,5 @@ console.log(eCrud.PremiumCount());
 console.log(eCrud.isRegistered("795000467301203972"))
 
 console.log(Extra.currentTime())
+
+console.log(eCrud.AdminCount());
