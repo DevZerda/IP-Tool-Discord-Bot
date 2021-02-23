@@ -2936,3 +2936,52 @@
 [CMD]: !play | [FullMSG]: !play Chief Keef - "Everyday"
 
 
+[CMD/MSG]: MSG | [Timestamp]: 2/23/2021
+[User]: نانو#2100 | [UserID]: 806100698135396372
+[Server]: Pandemic | [ServerID]: 811746459044151396
+[Channel]: →𝙲𝚑𝚊𝚝 | [ChannelID]: 811746930279055390
+[CMD]: !play | [FullMSG]: !play Chief Keef - No Reason
+
+
+[CMD/MSG]: CMD | [Timestamp]: 2/23/2021
+[User]: Geo#3529 | [UserID]: 479623845624676352
+[Server]: Geo's server | [ServerID]: 774612990015963166
+[Channel]: general | [ChannelID]: 774612990015963169
+[CMD]: ;inv | [FullMSG]: ;inv
+
+
+[CMD/MSG]: CMD | [Timestamp]: 2/23/2021
+[User]: نانو#2100 | [UserID]: 806100698135396372
+[Server]: Pandemic | [ServerID]: 811746459044151396
+[Channel]: →𝙲𝚑𝚊𝚝 | [ChannelID]: 811746930279055390
+[CMD]: ;help | [FullMSG]: ;help
+
+
+[CMD/MSG]: CMD | [Timestamp]: 2/23/2021
+[User]: نانو#2100 | [UserID]: 806100698135396372
+[Server]: Pandemic | [ServerID]: 811746459044151396
+[Channel]: →𝙲𝚑𝚊𝚝 | [ChannelID]: 811746930279055390
+[CMD]: ;info | [FullMSG]: ;info
+
+
+[CMD/MSG]: CMD | [Timestamp]: 2/23/2021
+[User]: نانو#2100 | [UserID]: 806100698135396372
+[Server]: Pandemic | [ServerID]: 811746459044151396
+[Channel]: →𝙲𝚑𝚊𝚝 | [ChannelID]: 811746930279055390
+[CMD]: ;info | [FullMSG]: ;info
+
+
+[CMD/MSG]: CMD | [Timestamp]: 2/23/2021
+[User]: نانو#2100 | [UserID]: 806100698135396372
+[Server]: Pandemic | [ServerID]: 811746459044151396
+[Channel]: →𝙲𝚑𝚊𝚝 | [ChannelID]: 811746930279055390
+[CMD]: ;admin | [FullMSG]: ;admin search 762348664940920863
+
+
+[CMD/MSG]: CMD | [Timestamp]: 2/23/2021
+[User]: نانو#2100 | [UserID]: 806100698135396372
+[Server]: Pandemic | [ServerID]: 811746459044151396
+[Channel]: →𝙲𝚑𝚊𝚝 | [ChannelID]: 811746930279055390
+[CMD]: ;admin | [FullMSG]: ;admin search_user 762348664940920863
+
+
