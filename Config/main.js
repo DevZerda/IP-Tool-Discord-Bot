@@ -23,6 +23,7 @@ exports.GetMsg = function(msg) {
         let i = 0;
         g.forEach(e => {
             C.CurrentCmd.arg[i] = e;
+            C.CurrentCmd.argCount = i;
             i++;
         });
         C.CurrentCmd.Cmd = g[0];
