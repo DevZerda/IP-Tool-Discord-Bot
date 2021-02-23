@@ -1,8 +1,6 @@
-const p = require('prompt-sync')();
 
-    while(true) {
-        let inputCMD = p('project@pandemic_cp#~ ');
-        if(inputCMD === "test") {
-            console.log("working");
-        }
-    }
+
+if(process.argv.length === 1) {
+    console.log("LULZ");
+    process.exit(0);
+}
