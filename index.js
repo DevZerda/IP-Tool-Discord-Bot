@@ -175,10 +175,10 @@ Client.on('message', async (msg) => {
 	        .addFields(
 		        { name: 'Total Members', value: eCrud.MemberCount(), inline: true },
 		        { name: 'Total Premium Members', value: eCrud.PremiumCount(), inline: true },
+		        { name: 'Total Admin Members', value: eCrud.AdminCount(), inline: true },
 		        { name: 'Total APIs', value: '2', inline: true},
 		        { name: 'Bot Server Count', value: Client.guilds.cache.size, inline: true },
-		        { name: 'Bot Creator', value: 'n4n0#2100', inline: true },
-		        { name: 'Bot Owner', value: 'Lux#1834', inline: true }
+		        { name: 'Bot Creator', value: 'n4n0#2100', inline: true }
 	        ) 
 	        .setFooter('Created/Developed By ' + Config.Info.Creator + ' | Headquarter Server: ' + Config.Info.ServerInv, ' ');
             msg.channel.send(exampleEmbed);
