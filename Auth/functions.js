@@ -106,9 +106,14 @@ exports.PremiumCount = function() {
 exports.AdminCount = function() {
     let db = fs.readFileSync("./db/users.db", "utf8");
     let users = db.split("\n");
+    let admins = 0;
     users.forEach(e => {
         if(e.length > 5) {
-            let admin_check = e.split(",")[4];
+            if(e.includes("1')")) {
+                admins++;
+            }
         }
     })
+
+    return admins;
 }
