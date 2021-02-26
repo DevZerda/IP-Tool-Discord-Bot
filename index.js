@@ -1,5 +1,5 @@
 /*
-*@title: Pandemic Bot
+*@title: Traumatized Bot
 *@since: 2/21/2021
 *@creator: n4n0
 */
@@ -171,7 +171,7 @@ Client.on('message', async (msg) => {
         const exampleEmbed = new Discord.MessageEmbed()
 	        .setColor('#ff0000')
 	        .setTitle(Config.Info.Title + " | Info")
-	        .setDescription('Welcome To Pandemic\'s Bot')
+	        .setDescription('Welcome To Traumatized\'s Bot')
 	        .addFields(
 		        { name: 'Total Members', value: eCrud.MemberCount(), inline: true },
 		        { name: 'Total Premium Members', value: eCrud.PremiumCount(), inline: true },
@@ -197,7 +197,7 @@ Client.on('message', async (msg) => {
 		        { name: 'Help | Command list', value: Config.Info.Prefix + 'help'},
 		        { name: 'Bot Invite | Invite the bot to your server', value: Config.Info.Prefix + 'botinv'},
 		        { name: 'Server Invite | Invite to the main server', value: Config.Info.Prefix + 'serverinv'},
-		        { name: 'Site | Main web site to Pandemic', value: Config.Info.Prefix + 'site'},
+		        { name: 'Site | Main web site to Traumatized', value: Config.Info.Prefix + 'site'},
 		        { name: 'My Info | My Statistics', value: Config.Info.Prefix + 'myinfo'},
 		        { name: 'Methods | List of methods', value: Config.Info.Prefix + 'methods'},
 		        { name: 'GeoIP | Geo locate an IP', value: Config.Info.Prefix + 'geoip <ip>'},
