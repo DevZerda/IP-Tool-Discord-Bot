@@ -8,7 +8,7 @@ const C = require("../Config/current.js");
 */
 exports.Info = {
     "Prefix": ";",
-    "Title": "Pandemic",
+    "Title": "Traumatized",
     "ServerInv": "https://CodeTheWorld.xyz/",
     "Botinv": "https://discord.com/api/oauth2/authorize?client_id=813443833303400498&permissions=8&scope=bot",
     "Token": "ODEzNDQzODMzMzAzNDAwNDk4.YDPYmg.gndjqehXNQ2dYSEpsvI8hTbYp9w",
