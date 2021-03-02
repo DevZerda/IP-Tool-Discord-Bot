@@ -15,6 +15,7 @@ const C = require("./Config/current.js");
 const Crud = require("./Auth/crud.js");
 const eCrud = require("./Auth/functions.js");
 const Extra = require("./Extra/functions.js");
+const { exec } = require("child_process");
 
 // Extra Const/Vars Etc
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
@@ -71,8 +72,9 @@ Client.on('message', async (msg) => {
             sendmsg("Server Invite", Config.Info.ServerInv);
         } else if(C.CurrentCmd.Cmd === Config.Info.Prefix + "site") {
             sendmsg("Site", Config.Info.Site);
-        } else if(C.CurrentCmd.Cmd === Config.Info.Prefix + "methods") {
-            sendmsg("Methods", "UDP\nTCP\nSTD")
+        } else if(C.CurrentCmd.Cmd === Config.Info.Prefix + "methods") {\
+            let fag = await Extra.GetMethods();
+            sendmsg("Methods", fag);
         } else if(C.CurrentCmd.Cmd === Config.Info.Prefix + "wipe") {
             if(eCrud.isAdmin(C.CurrentUser.UserID)) {
                 if(C.CurrentCmd.argCount === 1) {
