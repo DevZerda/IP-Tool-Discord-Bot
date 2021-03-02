@@ -37,6 +37,11 @@ exports.log_console = function(status) {
     Extra.log_to_file(output);
 }
 
+exports.GetMethods = async function() {
+    let gay = await(await fetch("https://traumatized.xyz/methods.txt")).text();
+    return gay;
+}
+
 /*
 *@params: IP Adress, Port, Time, Method
 *@type: (Promise[<string>])
