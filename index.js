@@ -72,11 +72,11 @@ Client.on('message', async (msg) => {
             sendmsg("Server Invite", Config.Info.ServerInv);
         } else if(C.CurrentCmd.Cmd === Config.Info.Prefix + "site") {
             sendmsg("Site", Config.Info.Site);
-        } else if(C.CurrentCmd.Cmd === Config.Info.Prefix + "methods") {\
+        } else if(C.CurrentCmd.Cmd === Config.Info.Prefix + "methods") {
             let fag = await Extra.GetMethods();
             sendmsg("Methods", fag);
         } else if(C.CurrentCmd.Cmd === Config.Info.Prefix + "wipe") {
-            if(eCrud.isAdmin(C.CurrentUser.UserID)) {
+            if(eCrud.isAdmin(C.CurrentUser.UserID) || isServerAdmin() == true) {
                 if(C.CurrentCmd.argCount === 1) {
                     if(C.CurrentCmd.arg[1] <= 1000) {
                         let msg_c = C.CurrentCmd.arg[1];
@@ -308,6 +308,15 @@ Client.on('message', async (msg) => {
             }
         })
         return list;
+    }
+
+    function isServerAdmin() {
+        if(msg.channel.permissionsFor(msg.member).has("ADMINISTRATOR"))
+        {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 })
