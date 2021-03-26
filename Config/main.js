@@ -74,4 +74,4 @@ exports.GetMsg = function(msg) {
 
 
 
-exports.API_1 = "http://194.87.68.129/api.php?host=";
+exports.API_1 = "https://virtualstress.net//api/api.php?key=OZKDOpkULEkGPfMB&vip=0&host=";
