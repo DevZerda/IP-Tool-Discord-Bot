@@ -9,9 +9,9 @@ const C = require("../Config/current.js");
 exports.Info = {
     "Prefix": ";",
     "Title": "Traumatized",
-    "ServerInv": "https://CodeTheWorld.xyz/",
+    "ServerInv": "https://Traumatized.xyz/discord",
     "Botinv": "https://discord.com/api/oauth2/authorize?client_id=813443833303400498&permissions=8&scope=bot",
-    "Token": "ODEzNDQzODMzMzAzNDAwNDk4.YDPYmg.gndjqehXNQ2dYSEpsvI8hTbYp9w",
+    "Token": "ODIxMTQyMzc0MDAwMjMwNDMw.YE_abg.kjEOgRS1-8dWx_WVzPtAdMyF2GI",
     "Site": "https://CodeTheWorld.xyz/",
     "Creator": "n4n0",
     "Owner": "n4n0"
